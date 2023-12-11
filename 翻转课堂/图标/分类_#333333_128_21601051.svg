@@ -1,0 +1,51 @@
+<svg width="128" height="128" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" style="font-size: 128px;">
+<title>Qt SVG Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel">
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0.933333,0.933333)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="#333333" fill-opacity="1" stroke="none" transform="matrix(1.23045,0,0,1.23045,-29.5308,-28.7425)" font-family="Arial" font-size="16" font-weight="400" font-style="normal">
+<path vector-effect="none" fill-rule="nonzero" d="M24,107.859 L24,44.8594 C24,40.9934 25.3668,37.6935 28.1005,34.9599 C30.8342,32.2262 34.134,30.8594 38,30.8594 L218,30.8594 C221.866,30.8594 225.166,32.2262 227.9,34.9599 C230.633,37.6935 232,40.9934 232,44.8594 L232,107.859 C232,111.725 230.633,115.025 227.9,117.759 C225.166,120.493 221.866,121.859 218,121.859 L38,121.859 C34.134,121.859 30.8342,120.493 28.1005,117.759 C25.3668,115.025 24,111.725 24,107.859 M36,107.859 C36,108.412 36.1953,108.883 36.5858,109.274 C36.9763,109.664 37.4477,109.859 38,109.859 L218,109.859 C219.333,109.859 220,109.193 220,107.859 L220,44.8594 C220,43.526 219.333,42.8594 218,42.8594 L38,42.8594 C37.4477,42.8594 36.9763,43.0546 36.5858,43.4452 C36.1953,43.8357 36,44.3071 36,44.8594 L36,107.859 M79.2737,97.4069 C90.4706,97.4069 99.5475,88.33 99.5475,77.1331 C99.5475,65.9363 90.4706,56.8594 79.2737,56.8594 C68.0769,56.8594 59,65.9363 59,77.1331 C59,88.33 68.0769,97.4069 79.2737,97.4069 M86.9666,74.0876 C87.3539,75.0658 87.5475,76.081 87.5475,77.1331 C87.5475,78.1852 87.3539,79.2004 86.9666,80.1787 C86.5461,81.2408 85.9319,82.1758 85.1242,82.9836 C84.3164,83.7913 83.3814,84.4054 82.3193,84.826 C81.341,85.2132 80.3258,85.4069 79.2737,85.4069 C78.2216,85.4069 77.2065,85.2132 76.2282,84.826 C75.1661,84.4054 74.2311,83.7913 73.4233,82.9836 C72.6156,82.1758 72.0014,81.2408 71.5809,80.1787 C71.1936,79.2004 71,78.1852 71,77.1331 C71,76.081 71.1936,75.0658 71.5809,74.0876 C72.0014,73.0254 72.6156,72.0905 73.4233,71.2827 C74.2311,70.4749 75.1661,69.8608 76.2282,69.4403 C77.2065,69.053 78.2216,68.8594 79.2737,68.8594 C80.3258,68.8594 81.341,69.053 82.3193,69.4403 C83.3814,69.8608 84.3164,70.4749 85.1242,71.2827 C85.9319,72.0905 86.5461,73.0254 86.9666,74.0876 M197.257,71.5423 L129.257,71.5423 C125.943,71.5423 123.257,74.2286 123.257,77.5423 C123.257,80.856 125.943,83.5423 129.257,83.5423 L197.257,83.5423 C200.571,83.5423 203.257,80.856 203.257,77.5423 C203.257,74.2286 200.571,71.5423 197.257,71.5423 M24,209.859 L24,146.859 C24,142.993 25.3668,139.694 28.1005,136.96 C30.8342,134.226 34.134,132.859 38,132.859 L218,132.859 C221.866,132.859 225.166,134.226 227.9,136.96 C230.633,139.694 232,142.993 232,146.859 L232,209.859 C232,213.725 230.633,217.025 227.9,219.758 C225.166,222.492 221.866,223.859 218,223.859 L38,223.859 C34.134,223.859 30.8342,222.492 28.1005,219.758 C25.3668,217.025 24,213.725 24,209.859 M36,209.859 C36,210.411 36.1953,210.883 36.5858,211.273 C36.9763,211.664 37.4477,211.859 38,211.859 L218,211.859 C219.333,211.859 220,211.193 220,209.859 L220,146.859 C220,145.526 219.333,144.859 218,144.859 L38,144.859 C37.4477,144.859 36.9763,145.055 36.5858,145.445 C36.1953,145.836 36,146.307 36,146.859 L36,209.859 M99.5475,179.133 C99.5475,190.33 90.4706,199.406 79.2737,199.406 C68.0769,199.406 59,190.33 59,179.133 C59,167.936 68.0769,158.859 79.2737,158.859 C90.4706,158.859 99.5475,167.936 99.5475,179.133 M87.5475,179.133 C87.5475,178.081 87.3539,177.066 86.9666,176.087 C86.5461,175.025 85.9319,174.09 85.1242,173.282 C84.3164,172.475 83.3814,171.861 82.3193,171.44 C81.341,171.053 80.3258,170.859 79.2737,170.859 C78.2216,170.859 77.2065,171.053 76.2282,171.44 C75.1661,171.861 74.2311,172.475 73.4233,173.282 C72.6156,174.09 72.0014,175.025 71.5809,176.087 C71.1936,177.066 71,178.081 71,179.133 C71,180.185 71.1936,181.2 71.5809,182.178 C72.0014,183.241 72.6156,184.176 73.4233,184.983 C74.2311,185.791 75.1661,186.406 76.2282,186.826 C77.2065,187.213 78.2216,187.406 79.2737,187.406 C80.3258,187.406 81.341,187.213 82.3193,186.826 C83.3814,186.406 84.3164,185.791 85.1242,184.983 C85.9319,184.176 86.5461,183.241 86.9666,182.178 C87.3539,181.2 87.5475,180.185 87.5475,179.133 M197.257,173.542 L129.257,173.542 C125.943,173.542 123.257,176.228 123.257,179.542 C123.257,182.856 125.943,185.542 129.257,185.542 L197.257,185.542 C200.571,185.542 203.257,182.856 203.257,179.542 C203.257,176.228 200.571,173.542 197.257,173.542 "></path>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0,0)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.0666667,0,0,0.0666667,0.933333,0.933333)" font-family="微软雅黑" font-size="12" font-weight="400" font-style="normal">
+</g>
+</g>
+</svg>
