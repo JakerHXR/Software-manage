@@ -1,144 +1,145 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2023/12/20 14:08:48                          */
+/* Created on:     2023/12/21 8:19:50                           */
 /*==============================================================*/
 
 
-alter table Log 
-   drop foreign key FK_LOG_LOGGING_USERBASE;
+alter table log 
+   drop foreign key FK_LOG_LOGGING_USER_BAS;
 
-alter table MenuFood 
-   drop foreign key FK_MENUFOOD_MANAGEMEN_ADMINIST;
+alter table menu_food 
+   drop foreign key FK_MENU_FOO_MANAGE_ME_ADMINIST;
 
-alter table MenuTag 
-   drop foreign key FK_MENUTAG_MANAGETAG_ADMINIST;
+alter table menu_tag 
+   drop foreign key FK_MENU_TAG_MANAGE_TA_ADMINIST;
 
-alter table User 
-   drop foreign key FK_USER_BELONG2_USERBASE;
+alter table user 
+   drop foreign key FK_USER_BELONG2_USER_BAS;
 
-alter table User 
+alter table user 
    drop foreign key FK_USER_CONTROL_ADMINIST;
 
-alter table UserBase 
-   drop foreign key FK_USERBASE_BELONG_USER;
+alter table user_base 
+   drop foreign key FK_USER_BAS_BELONG_USER;
 
-drop table if exists Administer;
-
-
-alter table Log 
-   drop foreign key FK_LOG_LOGGING_USERBASE;
-
-drop table if exists Log;
+drop table if exists administer;
 
 
-alter table MenuFood 
-   drop foreign key FK_MENUFOOD_MANAGEMEN_ADMINIST;
+alter table log 
+   drop foreign key FK_LOG_LOGGING_USER_BAS;
 
-drop table if exists MenuFood;
-
-
-alter table MenuTag 
-   drop foreign key FK_MENUTAG_MANAGETAG_ADMINIST;
-
-drop table if exists MenuTag;
+drop table if exists log;
 
 
-alter table User 
-   drop foreign key FK_USER_BELONG2_USERBASE;
+alter table menu_food 
+   drop foreign key FK_MENU_FOO_MANAGE_ME_ADMINIST;
 
-alter table User 
+drop table if exists menu_food;
+
+
+alter table menu_tag 
+   drop foreign key FK_MENU_TAG_MANAGE_TA_ADMINIST;
+
+drop table if exists menu_tag;
+
+
+alter table user 
+   drop foreign key FK_USER_BELONG2_USER_BAS;
+
+alter table user 
    drop foreign key FK_USER_CONTROL_ADMINIST;
 
-drop table if exists User;
+drop table if exists user;
 
 
-alter table UserBase 
-   drop foreign key FK_USERBASE_BELONG_USER;
+alter table user_base 
+   drop foreign key FK_USER_BAS_BELONG_USER;
 
-drop table if exists UserBase;
+drop table if exists user_base;
 
 /*==============================================================*/
-/* Table: Administer                                            */
+/* Table: administer                                            */
 /*==============================================================*/
-create table Administer
+create table administer
 (
-   AD_Name              varchar(20) not null  comment '',
-   AD_Pwd               varchar(50)  comment '',
-   CreateDate           datetime  comment '',
-   primary key (AD_Name)
+   admin_name           varchar(20) not null  comment '',
+   admin_pwd            varchar(50)  comment '',
+   create_date          datetime  comment '',
+   primary key (admin_name)
 );
 
 /*==============================================================*/
-/* Table: Log                                                   */
+/* Table: log                                                   */
 /*==============================================================*/
-create table Log
+create table log
 (
-   UserName             varchar(20)  comment '',
-   SelectedNo           varchar(20)  comment '',
-   SelectedName         varchar(20)  comment ''
+   user_name            varchar(20)  comment '',
+   select_no            varchar(20)  comment '',
+   select_name          varchar(20)  comment ''
 );
 
 /*==============================================================*/
-/* Table: MenuFood                                              */
+/* Table: menu_food                                             */
 /*==============================================================*/
-create table MenuFood
+create table menu_food
 (
-   MenuNo               varchar(20) not null  comment '',
-   AD_Name              varchar(20)  comment '',
-   MenuName             varchar(50)  comment '',
-   MenuFeature          varchar(100)  comment '',
-   primary key (MenuNo)
+   menu_no              varchar(20) not null  comment '',
+   admin_name           varchar(20)  comment '',
+   menu_name            varchar(50)  comment '',
+   menu_feature         varchar(100)  comment '',
+   primary key (menu_no)
 );
 
 /*==============================================================*/
-/* Table: MenuTag                                               */
+/* Table: menu_tag                                              */
 /*==============================================================*/
-create table MenuTag
+create table menu_tag
 (
-   FoodNo               varchar(20) not null  comment '',
-   AD_Name              varchar(20)  comment '',
-   FoodName             varchar(50)  comment '',
-   FoodTag              varchar(100)  comment '',
-   primary key (FoodNo)
+   food_no              varchar(20) not null  comment '',
+   admin_name           varchar(20)  comment '',
+   food_name            varchar(50)  comment '',
+   food_tag             varchar(100)  comment '',
+   primary key (food_no)
 );
 
 /*==============================================================*/
-/* Table: User                                                  */
+/* Table: user                                                  */
 /*==============================================================*/
-create table User
+create table user
 (
-   UserName             varchar(20)  comment '',
-   AD_Name              varchar(20)  comment '',
-   Name                 varchar(20)  comment '',
-   Age                  int  comment '',
-   Address              varchar(100)  comment ''
+   user_name            varchar(20)  comment '',
+   admin_name           varchar(20)  comment '',
+   name                 varchar(20)  comment '',
+   id                   varchar(50)  comment '',
+   age                  int  comment '',
+   address              varchar(100)  comment ''
 );
 
 /*==============================================================*/
-/* Table: UserBase                                              */
+/* Table: user_base                                             */
 /*==============================================================*/
-create table UserBase
+create table user_base
 (
-   UserName             varchar(20) not null  comment '',
-   UserPwd              varchar(50)  comment '',
-   primary key (UserName)
+   user_name            varchar(20) not null  comment '',
+   user_pwd             varchar(50)  comment '',
+   primary key (user_name)
 );
 
-alter table Log add constraint FK_LOG_LOGGING_USERBASE foreign key (UserName)
-      references UserBase (UserName) on delete restrict on update restrict;
+alter table log add constraint FK_LOG_LOGGING_USER_BAS foreign key (user_name)
+      references user_base (user_name) on delete restrict on update restrict;
 
-alter table MenuFood add constraint FK_MENUFOOD_MANAGEMEN_ADMINIST foreign key (AD_Name)
-      references Administer (AD_Name) on delete restrict on update restrict;
+alter table menu_food add constraint FK_MENU_FOO_MANAGE_ME_ADMINIST foreign key (admin_name)
+      references administer (admin_name) on delete restrict on update restrict;
 
-alter table MenuTag add constraint FK_MENUTAG_MANAGETAG_ADMINIST foreign key (AD_Name)
-      references Administer (AD_Name) on delete restrict on update restrict;
+alter table menu_tag add constraint FK_MENU_TAG_MANAGE_TA_ADMINIST foreign key (admin_name)
+      references administer (admin_name) on delete restrict on update restrict;
 
-alter table User add constraint FK_USER_BELONG2_USERBASE foreign key (UserName)
-      references UserBase (UserName) on delete restrict on update restrict;
+alter table user add constraint FK_USER_BELONG2_USER_BAS foreign key (user_name)
+      references user_base (user_name) on delete restrict on update restrict;
 
-alter table User add constraint FK_USER_CONTROL_ADMINIST foreign key (AD_Name)
-      references Administer (AD_Name) on delete restrict on update restrict;
+alter table user add constraint FK_USER_CONTROL_ADMINIST foreign key (admin_name)
+      references administer (admin_name) on delete restrict on update restrict;
 
-alter table UserBase add constraint FK_USERBASE_BELONG_USER foreign key (UserName)
-      references User (UserName) on delete restrict on update restrict;
+alter table user_base add constraint FK_USER_BAS_BELONG_USER foreign key (user_name)
+      references user (user_name) on delete restrict on update restrict;
 
