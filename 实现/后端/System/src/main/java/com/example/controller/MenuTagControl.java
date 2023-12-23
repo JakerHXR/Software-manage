@@ -31,6 +31,14 @@ public class MenuTagControl {
     }
 
     /*
+    挑选tag 显示菜单
+     */
+    @GetMapping("select")
+    public List<MenuTag> select(@RequestParam String food_tag){
+        return menuTagServices.select(food_tag);
+    }
+
+    /*
     增加一个
      */
     @PostMapping("insert")

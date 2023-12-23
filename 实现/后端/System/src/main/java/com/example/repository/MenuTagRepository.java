@@ -19,5 +19,11 @@ public interface MenuTagRepository extends CrudRepository<MenuTag,String> {
     查找一个
      */
     @Query(value = "select * from menu_tag where food_no like ?1",nativeQuery = true)
-    public MenuTag getSingle(String food_no);
+    MenuTag getSingle(String food_no);
+
+    /*
+    挑选tag
+     */
+    @Query(value = "select * from menu_tag where food_tag like ?1",nativeQuery = true)
+    List<MenuTag> select(String food_tag);
 }

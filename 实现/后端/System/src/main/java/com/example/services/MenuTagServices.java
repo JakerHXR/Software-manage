@@ -30,6 +30,13 @@ public class MenuTagServices {
     }
 
     /*
+    挑选tag显示菜单
+     */
+    public List<MenuTag> select(String food_tag){
+        return menuTagRepository.select(food_tag);
+    }
+
+    /*
     增加一个
      */
     public boolean insert(MenuTag menuTag){
