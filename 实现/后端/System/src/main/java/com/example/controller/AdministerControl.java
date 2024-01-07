@@ -31,7 +31,7 @@ public class AdministerControl {
         }
     }
 
-    @GetMapping("pwd")
+    @PostMapping("pwd")
     public String backPwd(@RequestBody Administer administer){
         if (administerServices.isExist(administer)){
             Administer temp = administerServices.findAdminister(administer);

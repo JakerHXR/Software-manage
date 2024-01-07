@@ -62,12 +62,11 @@ public class AdministerServices {
     @return boolean
      */
     public boolean updateAdminister(Administer administer){
-        if (!isExist(administer)){
-            return false;
-        }else {
+         if (isExist(administer)){
             administerRepository.save(administer);
             return true;
-        }
+         }
+         return false;
     }
 
 

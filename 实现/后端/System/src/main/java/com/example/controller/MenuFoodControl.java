@@ -25,7 +25,7 @@ public class MenuFoodControl {
     /*
     查询一个
      */
-    @GetMapping("find")
+    @PostMapping("find")
     public MenuFood getSingle(@RequestBody MenuFood menuFood){
         return menuFoodServices.getSingle(menuFood);
     }
@@ -33,7 +33,7 @@ public class MenuFoodControl {
     /*
     筛选
      */
-    @GetMapping("filter")
+    @PostMapping("filter")
     public List<MenuFood> filter(@RequestParam String menu_feature){
         return menuFoodServices.filter(menu_feature);
     }

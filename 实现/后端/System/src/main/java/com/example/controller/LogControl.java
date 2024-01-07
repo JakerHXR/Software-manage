@@ -15,7 +15,7 @@ import java.util.List;
 public class LogControl {
     private final LogServices logServices;
 
-    @GetMapping("getall")
+    @PostMapping("getall")
     public List<Log> getAll(@RequestBody UserBase userBase){
        return logServices.findAll(userBase);
     }
