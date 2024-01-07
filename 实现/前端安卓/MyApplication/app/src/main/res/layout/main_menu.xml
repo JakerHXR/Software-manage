@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
         android:background="@drawable/edittext_shape01"
-        app:iconifiedByDefault="false"
+        app:iconifiedByDefault="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:queryHint="请输入菜名"

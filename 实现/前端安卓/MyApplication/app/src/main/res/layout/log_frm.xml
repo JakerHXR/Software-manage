@@ -8,10 +8,10 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/forget_password_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="忘记密码？"
-
         app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 

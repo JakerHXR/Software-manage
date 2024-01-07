@@ -74,14 +74,14 @@
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:background="@drawable/edit_shape_fang"
-        android:text="请输入用户名"
-        android:textColor="#50000000"
+        android:hint="请输入用户名"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintVertical_bias="0.208"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/password"
@@ -89,12 +89,12 @@
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_shape_fang"
-        android:text="请输入密码"
-        android:textColor="#50000000"
+        android:hint="请输入密码"
         app:layout_constraintEnd_toEndOf="@+id/username"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/new_password"
@@ -102,16 +102,16 @@
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_shape_fang"
-        android:text="请输入密码"
-        android:textColor="#50000000"
+        android:hint="请确认密码"
         app:layout_constraintEnd_toEndOf="@+id/username"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:padding="10dp"/>
 
     <Button
 
-        android:id="@+id/login"
+        android:id="@+id/rigist"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="确认"

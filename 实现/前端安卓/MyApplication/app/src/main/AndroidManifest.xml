@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,7 +22,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-
+        <activity android:name=".user_rigist"/>
+        <activity android:name=".history_show"/>
+        <activity android:name=".food_intro"/>
+        <activity android:name=".admin_manager"/>
+        <activity android:name=".admin_main"/>
+        <activity android:name=".forget_pass"/>
+        <activity android:name=".food_manage"/>
+        <activity android:name=".seaarch"/>
+        <activity android:name=".search_result"/>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 </manifest>

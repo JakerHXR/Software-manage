@@ -5,50 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="我的"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="编辑"
-        android:textSize="20dp"
-        android:layout_marginRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/dividing"
-        android:layout_width="407dp"
-        android:layout_height="10dp"
-        android:layout_marginTop="240dp"
-        android:background="@color/gray"
+    <View
+        android:id="@+id/admin_top"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/myLove"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎您，管理员"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_top"
+        app:layout_constraintEnd_toEndOf="@+id/admin_top"
+        app:layout_constraintStart_toStartOf="@+id/admin_top"
+        app:layout_constraintTop_toTopOf="@+id/admin_top" />
+    <View
+        android:id="@+id/admin_bottom"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="@+id/dividing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/admin_top" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/admin_food_manager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/admin_bottom"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dividing"
+
         android:padding="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="10dp"
-            android:text="我的喜好"
+            android:text="菜单管理"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/love"
             app:layout_constraintStart_toEndOf="@+id/love"
@@ -63,16 +56,25 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <ImageButton
+            android:id="@+id/to_manage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/foward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/myHistory"
+        android:id="@+id/admin_manager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="@+id/myLove"
+        app:layout_constraintEnd_toEndOf="@+id/admin_food_manager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/myLove"
+        app:layout_constraintTop_toBottomOf="@id/admin_food_manager"
         android:padding="20dp">
         <TextView
             android:id="@+id/txt_history"
@@ -80,7 +82,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="10dp"
-            android:text="历史记录"
+            android:text="管理员账户管理"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/history_icon"
             app:layout_constraintStart_toEndOf="@+id/history_icon"
@@ -95,16 +97,25 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <ImageButton
+            android:id="@+id/add_admin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/foward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/exit"
+        android:id="@+id/mySetting"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="@+id/myHistory"
+        app:layout_constraintEnd_toEndOf="@+id/admin_manager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/myHistory"
+        app:layout_constraintTop_toBottomOf="@id/admin_manager"
         android:padding="20dp">
         <TextView
             android:layout_width="wrap_content"
@@ -127,5 +138,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/foward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
