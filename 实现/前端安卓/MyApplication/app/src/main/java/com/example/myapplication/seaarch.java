@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,10 +24,16 @@ public class seaarch extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_food);
         SearchView searchView=findViewById(R.id.searchView3);
         EditText tag=findViewById(R.id.search_tags);
+
+        ImageButton button=findViewById(R.id.back);
+        button.setOnClickListener(view -> {
+            onBackPressed();
+        });
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

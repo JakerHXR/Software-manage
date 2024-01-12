@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/love"
+        android:icon="@drawable/home1"
         android:title="主页" />
 
     <item
@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/navigation_user"
-        android:icon="@drawable/love"
+        android:icon="@drawable/my"
         android:title="我的" />
 </menu>
 

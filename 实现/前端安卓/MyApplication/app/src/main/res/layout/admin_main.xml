@@ -52,7 +52,7 @@
             android:id="@+id/love"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/love"
+            android:src="@drawable/menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -93,7 +93,7 @@
             android:id="@+id/history_icon"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/love"
+            android:src="@drawable/user_manager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -133,7 +133,7 @@
             android:id="@+id/Setting_icon"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/love"
+            android:src="@drawable/exit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
