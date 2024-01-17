@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/menu_recommend
+    url: jdbc:mysql://localhost:3306/softmanager
     username: root
-    password: 123
+    password: hjz123456
 
   jpa:
     open-in-view: false
